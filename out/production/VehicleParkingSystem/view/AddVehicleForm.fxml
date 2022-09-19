@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="290.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddVehicleFormController">
+   <children>
+      <Label prefHeight="44.0" prefWidth="800.0" style="-fx-background-color: #bfbfbf;" text=" Add Vehicle">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="103.0" text="Vehicle Number">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="165.0" text="Maximum Weight">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="224.0" text="No of passengers">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="addVehicleNumContext" layoutX="229.0" layoutY="104.0" onAction="#moveMaxWeight" prefHeight="24.0" prefWidth="166.0" style="-fx-background-color: #bfbfbf;" />
+      <TextField fx:id="maxWeightContext" layoutX="229.0" layoutY="166.0" onAction="#moveNoOfPassengers" prefHeight="24.0" prefWidth="166.0" style="-fx-background-color: #bfbfbf;" />
+      <TextField fx:id="noOfPassengersContext" layoutX="229.0" layoutY="225.0" prefHeight="24.0" prefWidth="166.0" style="-fx-background-color: #bfbfbf;" />
+      <Label layoutX="439.0" layoutY="103.0" text="Vehicle Type">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="vehicleTypeContext" layoutX="600.0" layoutY="104.0" prefWidth="150.0" style="-fx-background-color: #bfbfbf;" />
+      <Button fx:id="btnAddVehicleContext" layoutX="603.0" layoutY="219.0" mnemonicParsing="false" onAction="#btnAddVehicleOnAction" style="-fx-border-radius: 10; -fx-background-color: white; -fx-border-color: black;" text="Add Vehicle">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
